@@ -21,7 +21,7 @@ namespace Digisegal.Controllers
         public IActionResult GetAmazingOffer(int AmazingOfferId)
         {
             var Offers = UnitOfWork.ProductRepository.entity().Where(n => n.AmazingofferId == AmazingOfferId);
-            var Test = "jhdjh";
+            var Test = "Success";
             return Ok(Offers);
         }
     }
