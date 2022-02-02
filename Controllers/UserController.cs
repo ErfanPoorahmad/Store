@@ -18,20 +18,14 @@ namespace Digisegal.Controllers
         public UserController(IUnitOfWork unitOfWork)
         : base(unitOfWork)
         {
-
         }
-     
-
-
 
         [HttpGet]
         [Route("Getuser")]
         public IActionResult GetUser( int id)
         {
             var user = UnitOfWork.UserRepository.Get(id);
-            var NAme = "aghdghsd0";
             return Ok(user);
         }
-
     }
 }

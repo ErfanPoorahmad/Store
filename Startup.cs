@@ -30,7 +30,7 @@ namespace Digisegal
                        .AllowAnyMethod()
                        .AllowAnyHeader();
             }));
-            services.AddDbContext<SegalDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Segal")));
+            services.AddDbContext<StoreSegalDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Segal")));
             services.AddMvc();
             services.AddControllers();
             services.AddScoped<IUserRepository , UserRepository>();

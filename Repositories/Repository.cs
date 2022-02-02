@@ -13,9 +13,9 @@ namespace Digisegal.Repositories
     {
 
         
-        protected readonly SegalDbContext context;
+        protected readonly StoreSegalDbContext context;
         protected readonly DbSet<TEntity> dbset;
-        public Repository(SegalDbContext context)
+        public Repository(StoreSegalDbContext context)
         {
 
             this.context = context;
